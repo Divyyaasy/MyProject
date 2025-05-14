@@ -44,6 +44,6 @@ public class LoginPage {
     public void loginToApp(String user, String pass) {
         enterUsername(user);
         enterPassword(pass);
-        clickLogin();
+        clickLogin();//login
     }
 }
