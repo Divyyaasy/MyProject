@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gmit.TC_Login" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-14T11:59:40.822Z" hostname="DESKTOP-CGF9PFU" time="5.814">
+  <properties/>
+  <testcase name="loginTest" classname="com.gmit.TC_Login" time="5.814"/>
+  <system-out><![CDATA[Login successful. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using msedgedriver 135.0.3179.73 (resolved driver for Edge 135)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+[Test worker] INFO io.github.bonigarcia.wdm.online.Downloader - Downloading https://msedgewebdriverstorage.blob.core.windows.net/edgewebdriver/135.0.3179.73/edgedriver_win64.zip
+[Test worker] INFO io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file edgedriver_win64.zip
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\HP\.cache\selenium\msedgedriver\win64\135.0.3179.73\msedgedriver.exe
+Apr 14, 2025 5:29:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 135
+]]></system-err>
+</testsuite>

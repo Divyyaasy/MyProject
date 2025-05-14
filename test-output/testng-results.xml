@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-16T09:48:39 IST" name="Default suite" finished-at="2025-04-16T09:49:11 IST" duration-ms="32065">
+    <groups>
+    </groups>
+    <test started-at="2025-04-16T09:48:39 IST" name="Default test" finished-at="2025-04-16T09:49:11 IST" duration-ms="32065">
+      <class name="com.gmit.TC_Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.gmit.TC_Login@3571b748]" started-at="2025-04-16T09:48:39 IST" name="setup" finished-at="2025-04-16T09:49:03 IST" duration-ms="24555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:com.gmit.TC_Login@3571b748]" started-at="2025-04-16T09:49:04 IST" name="loginTest" finished-at="2025-04-16T09:49:08 IST" duration-ms="4691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gmit.TC_Login@3571b748]" started-at="2025-04-16T09:49:08 IST" name="tearDown" finished-at="2025-04-16T09:49:11 IST" duration-ms="2667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.gmit.TC_Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

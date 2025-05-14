@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gmit.AppTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-04-14T11:58:18.229Z" hostname="DESKTOP-CGF9PFU" time="0.029">
+  <properties/>
+  <testcase name="testlogin1" classname="com.gmit.AppTest" time="0.025"/>
+  <testcase name="testlogin2" classname="com.gmit.AppTest" time="0.001"/>
+  <system-out><![CDATA[file:/C:/Users/HP/eclipse-workspace/MyProject/build/resources/main/config.properties
+file:/C:/Users/HP/eclipse-workspace/MyProject/build/resources/main/config.properties
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
