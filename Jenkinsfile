@@ -2,23 +2,25 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/Divyyaasy/MyProject.git'
-            }
-        }
-
         stage('Build') {
             steps {
-                bat 'C:\\apache-maven-3.9.9\\bin\\mvn -Dmaven.test.failure.ignore=true clean package'
+                echo 'Building...'
+                sh 'mvn clean compile'
             }
         }
-    }
 
-    post {
-        success {
-            junit '**/target/surefire-reports/TEST-*.xml'
-            archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                sh 'mvn test' // or any other test command
+            }
+        }
+
+        stage('Report') {
+            steps {
+                echo 'Publishing test results...'
+                junit 'target/surefire-reports/*.xml' // This line must be here
+            }
         }
     }
 }
