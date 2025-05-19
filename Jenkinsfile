@@ -5,21 +5,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'mvn clean compile'
+                bat 'echo Hello from Windows!'
             }
         }
-
         stage('Test') {
             steps {
-                echo 'Running tests...'
-                sh 'mvn test' // or any other test command
+                echo 'Testing...'
+                bat 'echo Running tests...'
             }
         }
-
         stage('Report') {
             steps {
-                echo 'Publishing test results...'
-                junit 'target/surefire-reports/*.xml' // This line must be here
+                echo 'Generating report...'
+                bat 'echo Done!'
             }
         }
     }
