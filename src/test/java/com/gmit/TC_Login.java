@@ -32,17 +32,19 @@ public class TC_Login {
     @BeforeClass
     public void setup() throws IOException
     {
-        // System.setProperty("webdriver.edge.driver", "C:\\WebDriver\\msedgedriver.exe");
-        WebDriverManager.edgedriver().setup();
-        EdgeOptions options = new EdgeOptions();
-       
-        //driver = new EdgeDriver(options);
-       //  options.addArguments("headless");
-        //options.addArguments("disable-gpu");
-
-        driver = new EdgeDriver(options);
-        
+        WebDriverManager.chromedriver().setup();
+    	 ChromeOptions options = new ChromeOptions();
+    	 
+    	 driver = new ChromeDriver(options);
+    	 
          wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        
+        // System.setProperty("webdriver.edge.driver", "C:\\WebDriver\\msedgedriver.exe");
+       // WebDriverManager.edgedriver().setup();
+        //EdgeOptions options = new EdgeOptions();
+         //  options.addArguments("headless");
+        //options.addArguments("disable-gpu");
+           // wait = new WebDriverWait(driver, Duration.ofSeconds(10));
            driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
      
