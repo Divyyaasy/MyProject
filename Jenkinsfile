@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.9.9'   // Replace with the name configured in Jenkins Global Tool Configuration C:\apache-maven-3.9.9
+        maven 'Maven 3.9.9'  // Change 'M3' to whatever name is listed in your Jenkins
     }
 
     stages {
