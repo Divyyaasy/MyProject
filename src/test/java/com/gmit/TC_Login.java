@@ -32,14 +32,20 @@ public class TC_Login {
     @BeforeClass
     public void setup() throws IOException
     {
+        // System.setProperty("webdriver.edge.driver", "C:\\WebDriver\\msedgedriver.exe");
         WebDriverManager.edgedriver().setup();
         EdgeOptions options = new EdgeOptions();
-       driver = new EdgeDriver(options);
-        
+       
+        //driver = new EdgeDriver(options);
+       //  options.addArguments("headless");
+        //options.addArguments("disable-gpu");
+
+        driver = new EdgeDriver(options);
         
          wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+           driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        driver.manage().window().maximize();
+     
             }
 
     @Test
@@ -59,8 +65,8 @@ public class TC_Login {
         WebElement loginButton = driver.findElement(By.cssSelector("button[type='submit']"));
         loginButton.click();
         
-       
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Dashboard']")));
+       wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='oxd-topbar-header-breadcrumb']/h6[text()='Dashboard']")));
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Dashboard']")));
         
         String currentURL = driver.getCurrentUrl();
         Assert.assertEquals(currentURL, "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
@@ -73,7 +79,7 @@ public class TC_Login {
     public void tearDown() {
     	
     	 if (driver != null) {
-           // driver.quit();
+            driver.quit();
          }
     	
     }
